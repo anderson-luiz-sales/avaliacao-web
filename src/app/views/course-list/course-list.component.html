@@ -1,0 +1,49 @@
+<mat-card>
+    <form class="example-form">
+
+        <mat-form-field class="id-course">
+            <mat-label>Código do Curso</mat-label>
+            <input matInput placeholder="id" [(ngModel)]="course.id" name="id">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="data-inicial">
+            <mat-label>Data Inicial</mat-label>
+            <input matInput placeholder="0000-00-00" [(ngModel)]="course.startDate" name="startDate">
+        </mat-form-field>
+
+        <mat-form-field class="data-final">
+            <mat-label>Data Final</mat-label>
+            <input matInput placeholder="0000-00-00" [(ngModel)]="course.endDate" name="endDate">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="qtd-aluno">
+            <mat-label>Quantidade de Alunos</mat-label>
+            <input matInput placeholder="" [(ngModel)]="course.studentQuantity" name="studentQuantity">
+        </mat-form-field>
+
+        <mat-form-field class="curso-descricao">
+            <mat-label>Descrição do Curso</mat-label>
+            <input matInput placeholder="" [(ngModel)]="course.subjectDescription" name="subjectDescription">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="id-categoria">
+            <mat-label>Código da Categoria</mat-label>
+            <input matInput placeholder="" [(ngModel)]="course?.category.id" name="categoryId">
+        </mat-form-field>
+
+        <mat-form-field class="cat-descricao">
+            <mat-label>Descriçao</mat-label>
+            <input matInput placeholder="" [(ngModel)]="course?.category.description" name="description">
+        </mat-form-field>
+        <br>
+
+        <button mat-flat-button class="btn-salvar" color="primary" (click)= "createCourse()">Salvar</button>
+        <button mat-flat-button class="btn-editar" color="primary">Editar</button>
+    </form>
+</mat-card>
+<br>
+<br>
+<app-table-course></app-table-course>
