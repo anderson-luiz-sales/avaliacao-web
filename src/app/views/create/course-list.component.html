@@ -31,17 +31,16 @@
 
         <mat-form-field class="id-categoria">
             <mat-label>Código da Categoria</mat-label>
-            <input matInput placeholder="" [(ngModel)]="course?.category.id" name="categoryId">
+            <input matInput placeholder="" [(ngModel)]="course.category.id" name="categoryId">
         </mat-form-field>
 
         <mat-form-field class="cat-descricao">
             <mat-label>Descriçao</mat-label>
-            <input matInput placeholder="" [(ngModel)]="course?.category.description" name="description">
+            <input matInput placeholder="" [(ngModel)]="course.category.description" name="description">
         </mat-form-field>
         <br>
 
         <button mat-flat-button class="btn-salvar" color="primary" (click)= "createCourse()">Salvar</button>
-        <button mat-flat-button class="btn-editar" color="primary">Editar</button>
     </form>
 </mat-card>
 <br>

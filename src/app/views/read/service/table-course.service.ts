@@ -1,4 +1,4 @@
-import { Course } from './../../course-list/course.model';
+import { Course } from './../../create/course.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

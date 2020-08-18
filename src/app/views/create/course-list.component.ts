@@ -26,7 +26,7 @@ export class CourseListComponent implements OnInit {
 
   createCourse(): void {
     this.courseListService.create(this.course).subscribe(() => {
-    this.courseListService.showOnMessage('Operação exucatada com sucesso');
+    this.courseListService.showOnMessage('Curso salvo com sucesso');
     })
   }
 }

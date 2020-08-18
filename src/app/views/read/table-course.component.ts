@@ -1,4 +1,4 @@
-import { Course } from './../course-list/course.model';
+import { Course } from './../create/course.model';
 import { TableCourseService } from './service/table-course.service';
 import { Component, OnInit } from '@angular/core';
 
