@@ -1,4 +1,4 @@
-# Avaliacão Api
+# Avaliacão Web
 Aplicação responsável por gerenciar crud de cursos.
 
 ### Instalação 
