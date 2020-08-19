@@ -16,7 +16,7 @@ export class CourseListComponent implements OnInit {
     startDate: null,
     endDate: null,
     studentQuantity: 0,
-    category: {categoryId: '', description: ''}
+    category: {id: '', description: ''}
   }
 
   constructor(private courseListService: CourseListService) { }
