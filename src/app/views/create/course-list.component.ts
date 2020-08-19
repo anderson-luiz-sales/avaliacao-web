@@ -29,4 +29,10 @@ export class CourseListComponent implements OnInit {
     this.courseListService.showOnMessage('Curso salvo com sucesso');
     })
   }
+
+  updateCourse(): void {
+    this.courseListService.update(this.course).subscribe(() => {
+      this.courseListService.showOnMessage('Atualizado com sucesso')
+    })
+  }
 }
