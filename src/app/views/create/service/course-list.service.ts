@@ -33,4 +33,9 @@ export class CourseListService {
   update(course: Course): Observable<Course> {
     return this.http.put<Course>(this.baseUrl, course);
   }
+
+  deleteById(id: string): Observable<Course> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Course>(url)
+  }
 }

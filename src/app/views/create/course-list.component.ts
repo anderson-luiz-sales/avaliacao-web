@@ -35,4 +35,10 @@ export class CourseListComponent implements OnInit {
       this.courseListService.showOnMessage('Atualizado com sucesso')
     })
   }
+
+  deleteCourse(): void {
+    this.courseListService.deleteById(this.course.id).subscribe(() => {
+    this.courseListService.showOnMessage('Curso deletado com sucesso');
+    })
+  }
 }
