@@ -30,6 +30,12 @@ export class CourseListComponent implements OnInit {
     })
   }
 
+  getByIdCourse(): void {
+    this.courseListService.getById(this.course.id).subscribe(() => {
+    console.log(this.course);
+    })
+  }
+
   updateCourse(): void {
     this.courseListService.update(this.course).subscribe(() => {
       this.courseListService.showOnMessage('Atualizado com sucesso')
