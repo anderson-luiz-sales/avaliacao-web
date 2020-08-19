@@ -9,12 +9,12 @@
 
         <mat-form-field class="data-inicial">
             <mat-label>Data Inicial</mat-label>
-            <input matInput placeholder="0000-00-00" [(ngModel)]="course.startDate" name="startDate">
+            <input matInput placeholder="0000-00-00" type="date" [(ngModel)]="course.startDate" name="startDate" ui-date-mask="DD-MM-YYYY">
         </mat-form-field>
 
         <mat-form-field class="data-final">
             <mat-label>Data Final</mat-label>
-            <input matInput placeholder="0000-00-00" [(ngModel)]="course.endDate" name="endDate">
+            <input matInput placeholder="0000-00-00" type="date" [(ngModel)]="course.endDate" name="endDate" ui-date-mask="DD-MM-YYYY">
         </mat-form-field>
         <br>
 
