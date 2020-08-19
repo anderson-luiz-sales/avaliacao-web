@@ -11,8 +11,7 @@ export class TableCourseComponent implements OnInit {
 
 
   courses: Course[];
-  displayedColumns = ['id', 'subjectDescription', 'startDate', 'endDate', 'studentQuantity']
-  displayedColumns2 = ['categoryId', 'description']
+  displayedColumns = ['id', 'subjectDescription', 'startDate', 'endDate', 'studentQuantity', 'description']
 
   constructor(private tableCourse: TableCourseService) {}
 
